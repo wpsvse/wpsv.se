@@ -1,17 +1,13 @@
--![Seravo.com](https://seravo.com/wp-content/themes/seravo/images/seravo-banner-808x300.png)
+-![WordPress Sverige](https://github.com/wpsvse/wpsv-full/blob/master/htdocs/wp-content/themes/wpsv/img/slider-1-screens.png)
 
-# Seravo WordPress
+# WordPress Sverige
 [![Build Status](https://travis-ci.org/Seravo/wordpress.svg?branch=master)](https://travis-ci.org/Seravo/wordpress)
 
-Brought to you by [Seravo.com](https://seravo.com).
+Brought to you by WordPress Sveriges [team](https://github.com/wpsvse) with help from [Seravo.com](https://seravo.com) with server and development workflow setup.
 
 A WordPress project layout for use with Git, Composer and Nginx. It also includes a config for an opinionated Vagrant box.
 
 This same project layout is used by default on all [Seravo.com](https://seravo.com) instances for easy deployment workflow. Contents of this repository equals to what you would have on the server in the directory /data/wordpress/.
-
-## Documentation
-
-Please see our documentation at https://seravo.com/docs/ for more info.
 
 ## Installation
 
