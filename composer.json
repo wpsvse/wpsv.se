@@ -1,29 +1,11 @@
 {
-  "name": "seravo/wordpress",
+  "name": "wpsv/wpsv",
   "type": "project",
   "license": "MIT",
-  "description": "Seravo WordPress instance template",
-  "homepage": "https://seravo.com/",
-  "authors": [
-    {
-      "name": "Antti Kuosmanen",
-      "email": "antti@seravo.fi",
-      "homepage": "https://github.com/anttiviljami"
-    },
-    {
-      "name": "Otto Kekäläinen",
-      "email": "otto@seravo.fi",
-      "homepage": "https://github.com/ottok"
-    },
-    {
-      "name": "Onni Hakala",
-      "email": "onni@seravo.fi",
-      "homepage": "https://github.com/onnimonni"
-    }
-  ],
-  "keywords": [
-    "wordpress", "composer", "wp", "wp-palvelu", "seravo"
-  ],
+  "description": "WPSV.se",
+  "homepage": "http://wpsv.se",
+  "authors": [],
+  "keywords": [],
   "config": {
     "preferred-install": "dist"
   },
@@ -53,19 +35,13 @@
     "johnpbloch/wordpress": "*",
     "composer/installers": "v1.0.12",
     "koodimonni/composer-dropin-installer": ">=0.2.4",
-    "vlucas/phpdotenv": "1.0.9",
-
-    "koodimonni-language/fi": "*",
+    "vlucas/phpdotenv": "v1.0.9",
     "koodimonni-language/sv_SE": "*",
-
     "seravo/wp-palvelu-plugin": ">=1.0.1",
-
     "wpackagist-plugin/auto-post-thumbnail": "*",
-    "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
-    "wpackagist-plugin/wp-native-dashboard": "*",
-
-    "wpackagist-theme/twentysixteen": "*",
-    "wpackagist-theme/twentyfifteen": "*"
+    "wpackagist-plugin/wp-piwik": "*",
+    "wpackagist-plugin/english-wp-admin": "*",
+    "wpackagist-theme/twentysixteen": "*"
   },
   "extra": {
     "installer-paths": {
