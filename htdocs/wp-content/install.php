@@ -4,7 +4,7 @@
  *
  * Drop-ins are advanced plugins in the wp-content directory that replace WordPress functionality when present.
  *
- * Language: fi
+ * Language: sv_SE
  */
 
 /**
@@ -37,13 +37,13 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
   if ( $language ) {
     update_option( 'WPLANG', $language );
   } else {
-    update_option( 'WPLANG', 'fi' ); // Use fi as default if language is not defined
+    update_option( 'WPLANG', 'sv_SE' ); // Use fi as default if language is not defined
   }
 
   update_option('blogname', $blog_title);
   update_option('admin_email', $user_email);
   update_option('blog_public', $public);
-  update_option('blogdescription',__('Uusi WP-palvelu.fi -sivusto'));
+  update_option('blogdescription',__('WordPress Sverige'));
 
   $guessurl = wp_guess_url();
 
@@ -115,24 +115,24 @@ function wp_install_defaults( $user_id ) {
   /** @see wp-admin/options-general.php */
 
   /** Time zone: "Helsinki" */
-  update_option( 'timezone_string', 'Europe/Helsinki' );
+  update_option( 'timezone_string', 'Europe/Stockholm' );
 
   /** @see wp-admin/options-discussion.php */
 
   /** Before a comment appears a comment must be manually approved: true */
   update_option( 'comment_moderation', 1 );
 
-  /** Before a comment appears the comment author must have a previously approved comment: false */
-  update_option( 'comment_whitelist', 0 );
+  /** Before a comment appears the comment author must have a previously approved comment: true */
+  update_option( 'comment_whitelist', 1 );
 
-  /** Allow people to post comments on new articles (this setting may be overridden for individual articles): false */
-  update_option( 'default_comment_status', 0 );
+  /** Allow people to post comments on new articles (this setting may be overridden for individual articles): true */
+  update_option( 'default_comment_status', 1 );
 
-  /** Allow link notifications from other blogs: false */
-  update_option( 'default_ping_status', 0 );
+  /** Allow link notifications from other blogs: true */
+  update_option( 'default_ping_status', 1 );
 
-  /** Attempt to notify any blogs linked to from the article: false */
-  update_option( 'default_pingback_flag', 0 );
+  /** Attempt to notify any blogs linked to from the article: true */
+  update_option( 'default_pingback_flag', 1 );
 
   /** @see wp-admin/options-media.php */
 
@@ -147,9 +147,9 @@ function wp_install_defaults( $user_id ) {
 
 
 	// Default category
-	$cat_name = __('Uncategorized');
+	$cat_name = __('Okategoriserat');
 	/* translators: Default category slug */
-	$cat_slug = sanitize_title(_x('Uncategorized', 'Default category slug'));
+	$cat_slug = sanitize_title(_x('Okategoriserat', 'Okategoriserat'));
 
 	if ( global_terms_enabled() ) {
 		$cat_id = $wpdb->get_var( $wpdb->prepare( "SELECT cat_ID FROM {$wpdb->sitecategories} WHERE category_nicename = %s", $cat_slug ) );
@@ -187,9 +187,10 @@ function wp_install_defaults( $user_id ) {
 		$first_post = str_replace( 'SITE_URL', esc_url( network_home_url() ), $first_post );
 		$first_post = str_replace( 'SITE_NAME', get_current_site()->site_name, $first_post );
 	} else {
-    $first_post = __('<p>Hienoa, että valitsit palvelumme WP-palvelu.fi:n!</p>
-<p>Voit aloittaa <a href="/wp-login.php">kirjautumalla sisälle</a>.</p>
+    $first_post = __('<p>Välkommen till WPSV.se</p>
+<p>Logga in här med användarnamn/lösenord: vagrant/vagrant: <a href="/wp-login.php">Login</a>.</p>
 <p>Saat apua kysymyksiin lukemalla: <a href="https://wp-palvelu.fi/ohjeet/">wp-palvelu.fi/ohjeet/</a></p>
+<p>English docs: <a href="https://seravo.com/docs/">seravo.com/docs/</a></p>
 <p><img class="wp-image-6 alignnone" src="https://wp-palvelu.fi/wp-palvelu-logo-blue.png" alt="wp-palvelu-logo" width="237" height="50" /></p>');
 	}
 
