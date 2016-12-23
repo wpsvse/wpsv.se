@@ -28,6 +28,10 @@
     {
       "type": "composer",
       "url": "https://wp-languages.github.io"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:wpsvse/wpsvse-theme.git"
     }
   ],
   "require": {
@@ -41,7 +45,8 @@
     "wpackagist-plugin/auto-post-thumbnail": "*",
     "wpackagist-plugin/wp-piwik": "*",
     "wpackagist-plugin/english-wp-admin": "*",
-    "wpackagist-theme/twentysixteen": "*"
+    "wpackagist-theme/twentysixteen": "*",
+    "wpsv/wpsvse-theme": "dev-master"
   },
   "extra": {
     "installer-paths": {
