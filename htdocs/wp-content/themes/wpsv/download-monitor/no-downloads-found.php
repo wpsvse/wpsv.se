@@ -1,1 +1,0 @@
-<p><?php _e( 'No downloads found.', 'dlm_page_addon' ); ?></p>
