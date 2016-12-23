@@ -88,19 +88,6 @@ get_header(); ?>
    	</div>
 	<!-- End Top-part -->
 
-
-	<!-- Start Quick Buttons -->
-    <section id="quick-buttons" class="section">
-		<div class="container">
-			<div class="row">
-      	<!-- Start QUICK BUTTONS -->
-				<?php get_template_part( 'template-parts/quickbuttons' ); ?>
-        <!-- End QUICK BUTTONS -->
-      </div>
-    </div>
-    </section>
-    <!-- Start Quick Buttons -->
-
     <!-- Start Latest News -->
 	<section id="latest-news" class="section">
 		<div class="container">
@@ -220,73 +207,6 @@ get_header(); ?>
 	</div>
 	</section>
 	<!-- End Latest Blog Items -->
-
-	<!-- Start Latest Forum -->
-	<section id="latest-forum" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="section-headline">
-					<h2>Diskussionsforum</h2>
-					<span>Behöver du hjälp, har du funderingar, vill du hjälpa andra eller vara en del av communityn? Då är vårt <a href="<?php echo esc_url( home_url( '/forum/' ) ); ?>" rel="help">forum</a> platsen för dig!</span>
-				</div>
-			</div>
-
-      <?php // Check if bbPress plugin is loaded
-      if ( class_exists( 'bbPress' ) ) { ?>
-
-			<div class="row">
-
-        <div class="latest-forum-topics col-md-9">
-          <!-- Start LATEST FORUM POSTS -->
-            <?php bbp_get_template_part( 'content-latest-topics' ); ?>
-          <!-- End LATEST FORUM POSTS -->
-          </div>
-
-          <div id="latest-forum-sidebar" class="col-md-3">
-            <div class="forum-widget bbp-forum-search">
-              <h3>Hitta svar</h3>
-              <p>Vårt forum är som en stor databas med frågor och svar. Testa att söka efter din fråga och få ett svar direkt&hellip;</p>
-              <form role="search" method="get" id="bbp-search-form" action="<?php bbp_search_url(); ?>">
-              <label class="screen-reader-text hidden" for="bbp_search"><?php _e( 'Search for:', 'bbpress' ); ?></label>
-              <div class="input-group">
-               <!-- Start BBPRESS SEARCH FORM -->
-                <input type="text" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" name="bbp_search" id="bbp_search" class="form-control">
-                <input type="hidden" name="action" value="bbp-search-request" />
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="submit" id="bbp_search_submit">Sök</button>
-                </span>
-               <!-- End BBPRESS SEARCH FORM -->
-              </div><!-- /input-group -->
-              </form>
-            </div>
-
-            <div class="forum-widget new-bbp-post">
-            <h3>Ställ en fråga</h3>
-              <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett ämne med din fråga nu&hellip;</p>
-              <!-- Start BBPRESS NEW POST BUTTON -->
-              <a href="<?php echo esc_url( home_url( '/nytt-amne/' ) ); ?>" type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-              <!-- End BBPRESS NEW POST BUTTON -->
-            </div>
-
-            <!-- Start BBPRESS TAGCLOUD -->
-            <div class="forum-widget bbp-forum-tagcloud widget_tag_cloud">
-                <h3 class="widgettitle">Populära ämnestaggar</h3>
-                <div class="tagcloud">
-                  <?php echo do_shortcode('[bbp-topic-tags]'); ?>
-                </div>
-            </div>
-            <!-- End BBPRESS TAGCLOUD -->
-          </div>
-
-			</div>
-
-      <?php } else { ?>
-        <p style="text-align:center;"><strong>bbPress är inte aktiverat.</strong></p>
-      <?php } ?>
-
-		</div>
-	</section>
-	<!-- End Latest Forum -->
 
 	<!-- Start Statistics -->
 	<section id="statistics" class="section">
