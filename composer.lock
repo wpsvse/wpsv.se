@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4d0ddc94493b414a75fadfefe2866704",
-    "content-hash": "37e8a6aeda6ac8b8d91bc5bbe2bfd78c",
+    "hash": "dbb52f5de250e401e3d0033595affdca",
+    "content-hash": "30724e3a00b7491b2184bd9d2f3830cd",
     "packages": [
         {
             "name": "composer/installers",
@@ -600,24 +600,24 @@
             "homepage": "https://wordpress.org/plugins/auto-post-thumbnail/"
         },
         {
-            "name": "wpackagist-plugin/english-wp-admin",
-            "version": "1.5.1",
+            "name": "wpackagist-plugin/cmb2",
+            "version": "2.2.3.1",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/english-wp-admin/",
-                "reference": "tags/1.5.1"
+                "url": "https://plugins.svn.wordpress.org/cmb2/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/english-wp-admin.1.5.1.zip",
-                "reference": "tags/1.5.1",
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/english-wp-admin/"
+            "homepage": "https://wordpress.org/plugins/cmb2/"
         },
         {
             "name": "wpackagist-plugin/wp-piwik",
@@ -685,6 +685,26 @@
     ],
     "packages-dev": [
         {
+            "name": "wpackagist-plugin/english-wp-admin",
+            "version": "1.5.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/english-wp-admin/",
+                "reference": "tags/1.5.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/english-wp-admin.1.5.1.zip",
+                "reference": "tags/1.5.1",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/english-wp-admin/"
+        },
+        {
             "name": "wpackagist-plugin/fakerpress",
             "version": "0.4.7",
             "source": {
@@ -695,7 +715,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/fakerpress.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -715,7 +735,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/query-monitor.2.13.2.zip",
-                "reference": null,
+                "reference": "tags/2.13.2",
                 "shasum": null
             },
             "require": {
@@ -735,7 +755,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/rewrite-rules-inspector.1.2.1.zip",
-                "reference": null,
+                "reference": "tags/1.2.1",
                 "shasum": null
             },
             "require": {
@@ -755,7 +775,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.4.zip",
-                "reference": null,
+                "reference": "tags/1.4",
                 "shasum": null
             },
             "require": {
