@@ -51,7 +51,8 @@
   "require-dev": {
     "wpackagist-plugin/query-monitor": "*",
     "wpackagist-plugin/wp-crontrol": "*",
-    "wpackagist-plugin/rewrite-rules-inspector": "*"
+    "wpackagist-plugin/rewrite-rules-inspector": "*",
+    "wpackagist-plugin/fakerpress": "*"
   },
   "extra": {
     "installer-paths": {
