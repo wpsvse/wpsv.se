@@ -48,6 +48,11 @@
     "wpackagist-theme/twentysixteen": "*",
     "wpsv/wpsvse-theme": "dev-master"
   },
+  "require-dev": {
+    "wpackagist-plugin/query-monitor": "*",
+    "wpackagist-plugin/wp-crontrol": "*",
+    "wpackagist-plugin/rewrite-rules-inspector": "*"
+  },
   "extra": {
     "installer-paths": {
       "htdocs/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
