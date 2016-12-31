@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dbb52f5de250e401e3d0033595affdca",
-    "content-hash": "30724e3a00b7491b2184bd9d2f3830cd",
+    "hash": "8b3cbe528df0bff1de5b6f2df25f076e",
+    "content-hash": "36eeee11e8a31ae3d30779e2edb69072",
     "packages": [
         {
             "name": "composer/installers",
@@ -664,26 +664,54 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wpsvse/wpsvse-theme.git",
-                "reference": "127ead3b5fde76df06141b7a15c90dbb9702f4ce"
+                "url": "git@github.com:wpsvse/wpsvse-theme.git",
+                "reference": "ba0c63dd4cc511848563b5ff55f7d61fedf496da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/127ead3b5fde76df06141b7a15c90dbb9702f4ce",
-                "reference": "127ead3b5fde76df06141b7a15c90dbb9702f4ce",
+                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/ba0c63dd4cc511848563b5ff55f7d61fedf496da",
+                "reference": "ba0c63dd4cc511848563b5ff55f7d61fedf496da",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "1.*"
+                "composer/installers": "1.*",
+                "wpackagist-plugin/cmb2": "*"
             },
             "type": "wordpress-theme",
+            "extra": {
+                "installer-paths": {
+                    "inc-embedded/{$name}": [
+                        "type:wordpress-plugin"
+                    ]
+                }
+            },
             "support": {
                 "source": "https://github.com/wpsvse/wpsvse-theme/tree/master"
             },
-            "time": "2016-12-23 20:21:04"
+            "time": "2016-12-31 01:07:03"
         }
     ],
     "packages-dev": [
+        {
+            "name": "wpackagist-plugin/customizer-export-import",
+            "version": "0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/customizer-export-import/",
+                "reference": "tags/0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/customizer-export-import.0.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/customizer-export-import/"
+        },
         {
             "name": "wpackagist-plugin/english-wp-admin",
             "version": "1.5.1",
@@ -763,6 +791,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/"
+        },
+        {
+            "name": "wpackagist-plugin/widget-importer-exporter",
+            "version": "1.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/widget-importer-exporter/",
+                "reference": "tags/1.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/widget-importer-exporter.1.3.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/widget-importer-exporter/"
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",

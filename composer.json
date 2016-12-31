@@ -31,7 +31,8 @@
     },
     {
       "type": "vcs",
-      "url": "git@github.com:wpsvse/wpsvse-theme.git"
+      "url": "git@github.com:wpsvse/wpsvse-theme.git",
+      "no-api" : true
     }
   ],
   "require": {
@@ -53,7 +54,9 @@
     "wpackagist-plugin/wp-crontrol": "*",
     "wpackagist-plugin/rewrite-rules-inspector": "*",
     "wpackagist-plugin/fakerpress": "*",
-    "wpackagist-plugin/english-wp-admin": "*"
+    "wpackagist-plugin/english-wp-admin": "*",
+    "wpackagist-plugin/customizer-export-import": "*",
+    "wpackagist-plugin/widget-importer-exporter": "*"
   },
   "extra": {
     "installer-paths": {
