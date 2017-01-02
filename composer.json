@@ -47,6 +47,9 @@
     "wpackagist-plugin/wp-piwik": "*",
     "wpackagist-plugin/cmb2": "*",
     "wpackagist-theme/twentysixteen": "*",
+    "wpackagist-plugin/wordpress-importer": "*",
+    "wpackagist-plugin/customizer-export-import": "*",
+    "wpackagist-plugin/widget-importer-exporter": "*",
     "wpsv/wpsvse-theme": "dev-master"
   },
   "require-dev": {
@@ -54,9 +57,7 @@
     "wpackagist-plugin/wp-crontrol": "*",
     "wpackagist-plugin/rewrite-rules-inspector": "*",
     "wpackagist-plugin/fakerpress": "*",
-    "wpackagist-plugin/english-wp-admin": "*",
-    "wpackagist-plugin/customizer-export-import": "*",
-    "wpackagist-plugin/widget-importer-exporter": "*"
+    "wpackagist-plugin/english-wp-admin": "*"
   },
   "extra": {
     "installer-paths": {
