@@ -665,12 +665,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wpsvse/wpsvse-theme.git",
-                "reference": "ba0c63dd4cc511848563b5ff55f7d61fedf496da"
+                "reference": "8b9b2ee5265bb364a4e9532220eb72586689a9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/ba0c63dd4cc511848563b5ff55f7d61fedf496da",
-                "reference": "ba0c63dd4cc511848563b5ff55f7d61fedf496da",
+                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/8b9b2ee5265bb364a4e9532220eb72586689a9f8",
+                "reference": "8b9b2ee5265bb364a4e9532220eb72586689a9f8",
                 "shasum": ""
             },
             "require": {
@@ -685,10 +685,7 @@
                     ]
                 }
             },
-            "support": {
-                "source": "https://github.com/wpsvse/wpsvse-theme/tree/master"
-            },
-            "time": "2016-12-31 01:07:03"
+            "time": "2017-01-02 08:44:08"
         }
     ],
     "packages-dev": [
