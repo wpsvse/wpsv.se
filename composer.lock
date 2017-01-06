@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ef77076d3353f75b337ded68d21f515",
-    "content-hash": "55b260a955dd9156d8b6d3a07f8c94e6",
+    "hash": "052d978fc9b1bcf452cd7bce67f16b60",
+    "content-hash": "0a5b0b65542c0c511c5011b15a0a9c4d",
     "packages": [
         {
             "name": "composer/installers",
@@ -749,6 +749,26 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "wpackagist-plugin/custom-post-type-ui",
+            "version": "1.4.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
+                "reference": "tags/1.4.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.4.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
+        },
         {
             "name": "wpackagist-plugin/english-wp-admin",
             "version": "1.5.1",
