@@ -1,0 +1,314 @@
+# Translation of Themes - Twenty Thirteen in Swedish
+# This file is distributed under the same license as the Themes - Twenty Thirteen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-07-18 10:52:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: sv_SE\n"
+"Project-Id-Version: Themes - Twenty Thirteen\n"
+
+#. Description of the plugin/theme
+msgid "The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small."
+msgstr "2013 års standardtema för WordPress tar oss tillbaka till bloggen, med funktioner som en fulladdad lista med inläggsformat som var och ett visas på sitt eget vackra och unika sätt. Designdetaljer i överflöd, som börjar med en vibrerande färgschema och matchande bilder för sidhuvudet, vacker typografi och ikoner och en flexibel layout som ser bra ut på alla enheter, stora som små."
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Thirteen"
+msgstr "Twenty Thirteen"
+
+#: taxonomy-post_format.php:23
+msgid "%s Archives"
+msgstr "Arkiv för %s"
+
+#: tag.php:21
+msgid "Tag Archives: %s"
+msgstr "Etikettarkiv: %s"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Sökresultat för: %s"
+
+#: inc/custom-header.php:59
+msgctxt "header image description"
+msgid "Star"
+msgstr "Stjärna"
+
+#: inc/custom-header.php:54
+msgctxt "header image description"
+msgid "Diamond"
+msgstr "Diamant"
+
+#: inc/custom-header.php:49
+msgctxt "header image description"
+msgid "Circle"
+msgstr "Cirkel"
+
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+msgid "Twenty Thirteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Thirteen kräver minst WordPress version 3.6. Du kör version %s. Vänligen uppdatera och försök igen."
+
+#: image.php:58
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nästa <span class=\"meta-nav\">&rarr;</span>"
+
+#: image.php:57
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Föregående"
+
+#: image.php:45
+msgid "Full resolution"
+msgstr "Full upplösning"
+
+#: image.php:44
+msgid "Link to full-size image"
+msgstr "Länk till bild i originalstorlek"
+
+#: image.php:28
+msgid "<span class=\"attachment-meta\">Published on <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a></span>"
+msgstr "<span class=\"attachment-meta\">Publicerat <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> i <a href=\"%3$s\" title=\"Tillbaka till %4$s\" rel=\"gallery\">%5$s</a></span>"
+
+#: header.php:44
+msgid "Skip to content"
+msgstr "Gå till innehåll"
+
+#: header.php:43
+msgid "Menu"
+msgstr "Meny"
+
+#: functions.php:397
+msgid "Permalink to %s"
+msgstr "Permanent länk till %s"
+
+#: functions.php:391
+msgctxt "1: post format name. 2: date"
+msgid "%1$s on %2$s"
+msgstr "%1$s den %2$s"
+
+#: functions.php:371
+msgid "View all posts by %s"
+msgstr "Visa alla inlägg av %s"
+
+#. Translators: used between list items, there is a space after the comma.
+#: functions.php:356 functions.php:362
+msgid ", "
+msgstr ", "
+
+#: functions.php:350
+msgid "Sticky"
+msgstr "Klistrad"
+
+#: functions.php:332
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:331
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: functions.php:328
+msgid "Post navigation"
+msgstr "Inläggsnavigering"
+
+#: functions.php:302
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyare inlägg <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:298
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Äldre inlägg"
+
+#: functions.php:294
+msgid "Posts navigation"
+msgstr "Inläggsnavigering"
+
+#: functions.php:271
+msgid "Appears on posts and pages in the sidebar."
+msgstr "Visas i inlägg och på sidor i sidofältet."
+
+#: functions.php:269
+msgid "Secondary Widget Area"
+msgstr "Sekundärt widgetfält"
+
+#: functions.php:261
+msgid "Appears in the footer section of the site."
+msgstr "Visas i webbplatsens sidfot."
+
+#: functions.php:259
+msgid "Main Widget Area"
+msgstr "Primärt widgetfält"
+
+#: functions.php:246
+msgid "Page %s"
+msgstr "Sida %s"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Bitter, translate this to 'off'. Do not translate into your own language.
+#: functions.php:137
+msgctxt "Bitter font: on or off"
+msgid "on"
+msgstr "på"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Source Sans Pro, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:131
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr "på"
+
+#: functions.php:97
+msgid "Navigation Menu"
+msgstr "Navigeringsmeny"
+
+#: footer.php:19
+msgid "Proudly powered by %s"
+msgstr "Drivs med %s"
+
+#: content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Det verkar som det du letade efter inte kunde hittas. Kanske kan en sökning hjälpa."
+
+#: content-none.php:22
+msgid "Sorry, but nothing matched your search terms. Please try again with different keywords."
+msgstr "Beklagar, inget som matchade dina söktermer kunde hittas. Vänligen försök igen med andra sökord."
+
+#: content-none.php:18
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Är du redo att posta ditt första inlägg? <a href=\"%1$s\">Starta här</a>."
+
+#: content-none.php:12
+msgid "Nothing Found"
+msgstr "Inget kunde hittas"
+
+#: content-gallery.php:43 content-image.php:39 content-quote.php:29
+#: content-video.php:39 content.php:56
+msgid "View all % comments"
+msgstr "Visa alla % kommentarer"
+
+#: content-gallery.php:43 content-image.php:39 content-quote.php:29
+#: content-video.php:39 content.php:56
+msgid "One comment so far"
+msgstr "En kommentar så här långt"
+
+#: content-gallery.php:43 content-image.php:39 content-quote.php:29
+#: content-video.php:39 content.php:56
+msgid "Leave a comment"
+msgstr "Lämna en kommentar"
+
+#: content-aside.php:27 content-aside.php:35 content-audio.php:38
+#: content-chat.php:36 content-gallery.php:46 content-image.php:42
+#: content-link.php:19 content-quote.php:32 content-status.php:26
+#: content-video.php:42 content.php:31 image.php:50 page.php:39
+msgid "Edit"
+msgstr "Redigera"
+
+#: content-aside.php:20 content-audio.php:31 content-chat.php:30
+#: content-gallery.php:31 content-image.php:30 content-link.php:31
+#: content-quote.php:20 content-status.php:20 content-video.php:30
+#: content.php:48 image.php:76 page.php:35
+msgid "Pages:"
+msgstr "Sidor:"
+
+#. translators: %s: Name of current post
+#: content-aside.php:16 content-audio.php:27 content-chat.php:26
+#: content-gallery.php:27 content-image.php:26 content-link.php:27
+#: content-quote.php:16 content-status.php:16 content-video.php:26
+#: content.php:44 functions.php:506
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Fortsätt läsa %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "Kommentarer inaktiverade."
+
+#: comments.php:47
+msgid "Newer Comments &rarr;"
+msgstr "Nyare kommentarer &rarr;"
+
+#: comments.php:46
+msgid "&larr; Older Comments"
+msgstr "&larr; Äldre kommentarer"
+
+#: comments.php:45
+msgid "Comment navigation"
+msgstr "Kommentarsnavigering"
+
+#: comments.php:25
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "En reaktion på &rdquo;%2$s&rdquo;"
+msgstr[1] "%1$s reaktioner på &rdquo;%2$s&rdquo;"
+
+#: category.php:19
+msgid "Category Archives: %s"
+msgstr "Kategoriarkiv: %s"
+
+#: author.php:31
+msgid "All posts by %s"
+msgstr "Alla inlägg av %s"
+
+#: author-bio.php:30
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Visa alla inlägg av %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: author-bio.php:26
+msgid "About %s"
+msgstr "Om %s"
+
+#: archive.php:35
+msgid "Archives"
+msgstr "Arkiv"
+
+#: archive.php:33
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:33
+msgid "Yearly Archives: %s"
+msgstr "Årsarkiv: %s"
+
+#: archive.php:31
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:31
+msgid "Monthly Archives: %s"
+msgstr "månadsarkiv: %s"
+
+#: archive.php:29
+msgid "Daily Archives: %s"
+msgstr "Dagsarkiv: %s"
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Det verkar som inget kunde hittas för denna plats. Vill du kanske försöka med en sökning?"
+
+#: 404.php:21
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Det här var ju lite pinsamt, eller hur?"
+
+#: 404.php:16
+msgid "Not Found"
+msgstr "Kunde inte hittas"
+
+#. #-#-#-#-#  twentythirteen.pot (Twenty Thirteen 2.1)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: footer.php:19
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "WordPress teamet"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentythirteen/"
+msgstr "https://wordpress.org/themes/twentythirteen/"

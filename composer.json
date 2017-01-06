@@ -39,9 +39,7 @@
     "php": ">=5.3.2",
     "johnpbloch/wordpress": "*",
     "composer/installers": "v1.0.12",
-    "koodimonni/composer-dropin-installer": ">=0.2.4",
     "vlucas/phpdotenv": "v1.0.9",
-    "koodimonni-language/sv_SE": "*",
     "seravo/wp-palvelu-plugin": ">=1.0.1",
     "wpackagist-plugin/auto-post-thumbnail": "*",
     "wpackagist-plugin/wp-piwik": "*",
@@ -69,9 +67,6 @@
       "htdocs/wp-content/themes/{$name}": ["type:wordpress-theme"]
     },
     "dropin-paths": {
-      "htdocs/wp-content/languages/": ["vendor:koodimonni-language"],
-      "htdocs/wp-content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
-      "htdocs/wp-content/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "wordpress-install-dir": "htdocs/wordpress"
   }
