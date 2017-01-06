@@ -50,6 +50,8 @@
     "wpackagist-plugin/wordpress-importer": "*",
     "wpackagist-plugin/customizer-export-import": "*",
     "wpackagist-plugin/widget-importer-exporter": "*",
+    "wpackagist-plugin/invitations-for-slack": "*",
+    "wpackagist-plugin/wp-nested-pages": "*",
     "wpsv/wpsvse-theme": "dev-master"
   },
   "require-dev": {

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "052d978fc9b1bcf452cd7bce67f16b60",
-    "content-hash": "0a5b0b65542c0c511c5011b15a0a9c4d",
+    "hash": "b8626c88a2daaf2cac9bb001f55edca1",
+    "content-hash": "0bcc52ac74cd70ca1f0fd1345e3c15c1",
     "packages": [
         {
             "name": "composer/installers",
@@ -640,6 +640,26 @@
             "homepage": "https://wordpress.org/plugins/customizer-export-import/"
         },
         {
+            "name": "wpackagist-plugin/invitations-for-slack",
+            "version": "1.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/invitations-for-slack/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/invitations-for-slack.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/invitations-for-slack/"
+        },
+        {
             "name": "wpackagist-plugin/widget-importer-exporter",
             "version": "1.3.2",
             "source": {
@@ -678,6 +698,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-nested-pages",
+            "version": "1.6.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-nested-pages/",
+                "reference": "tags/1.6.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-nested-pages.1.6.5.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-nested-pages/"
         },
         {
             "name": "wpackagist-plugin/wp-piwik",
@@ -725,12 +765,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wpsvse/wpsvse-theme.git",
-                "reference": "79de00473f2124db1d1685a189675d8d04097c1c"
+                "reference": "cb05aed7313a8cadf18b4c77c3b7c138834b12aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/79de00473f2124db1d1685a189675d8d04097c1c",
-                "reference": "79de00473f2124db1d1685a189675d8d04097c1c",
+                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/cb05aed7313a8cadf18b4c77c3b7c138834b12aa",
+                "reference": "cb05aed7313a8cadf18b4c77c3b7c138834b12aa",
                 "shasum": ""
             },
             "require": {
@@ -745,7 +785,7 @@
                     ]
                 }
             },
-            "time": "2017-01-02 09:01:06"
+            "time": "2017-01-06 20:32:22"
         }
     ],
     "packages-dev": [
