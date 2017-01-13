@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0e779476411dddc4cc7e2eee33af47d5",
-    "content-hash": "dc329541807a4714af1f10d199736228",
+    "hash": "64ab0ca7f8924daad8430541cc73ee3c",
+    "content-hash": "aaab24dce85ae9c92a75bd80511be908",
     "packages": [
         {
             "name": "composer/installers",
@@ -333,6 +333,26 @@
             "homepage": "https://wordpress.org/plugins/customizer-export-import/"
         },
         {
+            "name": "wpackagist-plugin/force-regenerate-thumbnails",
+            "version": "2.0.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/force-regenerate-thumbnails/",
+                "reference": "tags/2.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/force-regenerate-thumbnails.2.0.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/force-regenerate-thumbnails/"
+        },
+        {
             "name": "wpackagist-plugin/invitations-for-slack",
             "version": "1.0.2",
             "source": {
@@ -478,12 +498,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wpsvse/wpsvse-theme.git",
-                "reference": "c1d105a2e3453c66d593954e54ed23ec5e74d3d0"
+                "reference": "befacf955309e2622da0e03238646ba63d9b2773"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/c1d105a2e3453c66d593954e54ed23ec5e74d3d0",
-                "reference": "c1d105a2e3453c66d593954e54ed23ec5e74d3d0",
+                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/befacf955309e2622da0e03238646ba63d9b2773",
+                "reference": "befacf955309e2622da0e03238646ba63d9b2773",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +518,7 @@
                     ]
                 }
             },
-            "time": "2017-01-13 20:22:14"
+            "time": "2017-01-13 20:31:44"
         }
     ],
     "packages-dev": [

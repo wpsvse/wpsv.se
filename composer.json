@@ -50,6 +50,7 @@
     "wpackagist-plugin/widget-importer-exporter": "*",
     "wpackagist-plugin/invitations-for-slack": "*",
     "wpackagist-plugin/thumbnail-upscale": "*",
+    "wpackagist-plugin/force-regenerate-thumbnails": "*",
     "wpackagist-plugin/wp-nested-pages": "*",
     "wpsv/wpsvse-theme": "dev-master"
   },
