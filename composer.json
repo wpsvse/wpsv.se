@@ -26,10 +26,6 @@
       "url": "https://wpackagist.org"
     },
     {
-      "type": "composer",
-      "url": "https://wp-languages.github.io"
-    },
-    {
       "type": "vcs",
       "url": "git@github.com:wpsvse/wpsvse-theme.git",
       "no-api" : true
@@ -52,6 +48,7 @@
     "wpackagist-plugin/thumbnail-upscale": "*",
     "wpackagist-plugin/force-regenerate-thumbnails": "*",
     "wpackagist-plugin/wp-nested-pages": "*",
+    "wpackagist-plugin/email-obfuscate-shortcode": "*",
     "wpsv/wpsvse-theme": "dev-master"
   },
   "require-dev": {
