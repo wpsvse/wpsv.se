@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2b6a5efad356cbf47295b5cfaf71d811",
-    "content-hash": "d572e84153bda97f86fde6f6e4b0d24a",
+    "hash": "fcb04d7ed27b4ad6db9c56c0e852ef95",
+    "content-hash": "b1384cdfe9ca3d9d95c6f038e3eeaff1",
     "packages": [
         {
             "name": "composer/installers",
@@ -518,12 +518,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wpsvse/wpsvse-theme.git",
-                "reference": "8b2b921710001993fc13f8d0210dc5d9ffaf1b53"
+                "reference": "250f99ac0833892c28d20d771ae77d50f1fe0668"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/8b2b921710001993fc13f8d0210dc5d9ffaf1b53",
-                "reference": "8b2b921710001993fc13f8d0210dc5d9ffaf1b53",
+                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/250f99ac0833892c28d20d771ae77d50f1fe0668",
+                "reference": "250f99ac0833892c28d20d771ae77d50f1fe0668",
                 "shasum": ""
             },
             "require": {
@@ -538,7 +538,7 @@
                     ]
                 }
             },
-            "time": "2017-01-27 19:20:46"
+            "time": "2017-01-27 19:37:14"
         }
     ],
     "packages-dev": [
@@ -561,26 +561,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
-        },
-        {
-            "name": "wpackagist-plugin/english-wp-admin",
-            "version": "1.5.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/english-wp-admin/",
-                "reference": "tags/1.5.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/english-wp-admin.1.5.1.zip",
-                "reference": "tags/1.5.1",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/english-wp-admin/"
         },
         {
             "name": "wpackagist-plugin/fakerpress",

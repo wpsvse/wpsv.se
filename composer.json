@@ -56,7 +56,6 @@
     "wpackagist-plugin/wp-crontrol": "*",
     "wpackagist-plugin/rewrite-rules-inspector": "*",
     "wpackagist-plugin/fakerpress": "*",
-    "wpackagist-plugin/english-wp-admin": "*",
     "wpackagist-plugin/custom-post-type-ui": "*"
   },
   "extra": {
