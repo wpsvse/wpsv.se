@@ -1,4 +1,4 @@
--![WordPress Sverige](https://raw.githubusercontent.com/wpsvse/wpsvse-theme/master/img/default.jpg)
+![WordPress Sverige](https://raw.githubusercontent.com/wpsvse/wpsvse-theme/master/img/login-logo.png)
 
 # [WordPress Sverige](https://wpsv.se)
 [![Build Status](https://travis-ci.org/Seravo/wordpress.svg?branch=master)](https://travis-ci.org/Seravo/wordpress)
