@@ -4,40 +4,43 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fcb04d7ed27b4ad6db9c56c0e852ef95",
-    "content-hash": "b1384cdfe9ca3d9d95c6f038e3eeaff1",
+    "content-hash": "c56e13ef7f33daa28db349a6958b3316",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.12",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa"
+                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/4127333b03e8b4c08d081958548aae5419d1a2fa",
-                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa",
+                "url": "https://api.github.com/repos/composer/installers/zipball/9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
+                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
                 "shasum": ""
             },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -48,66 +51,136 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
-                    "role": "Developer"
+                    "homepage": "https://github.com/shama"
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
+                "Dolibarr",
+                "Eliasis",
                 "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
                 "MODX Evo",
+                "Mautic",
+                "Maya",
                 "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Thelia",
                 "WolfCMS",
                 "agl",
+                "aimeos",
                 "annotatecms",
+                "attogram",
+                "bitrix",
                 "cakephp",
+                "chef",
+                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
+                "dokuwiki",
                 "drupal",
+                "eZ Platform",
                 "elgg",
+                "expressionengine",
                 "fuelphp",
+                "grav",
                 "installer",
+                "itop",
                 "joomla",
                 "kohana",
                 "laravel",
+                "lavalite",
                 "lithium",
                 "magento",
                 "mako",
                 "mediawiki",
                 "modulework",
+                "moodle",
+                "osclass",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "puppet",
+                "reindex",
+                "roundcube",
                 "shopware",
                 "silverstripe",
+                "sydes",
                 "symfony",
                 "typo3",
                 "wordpress",
+                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2014-02-24 04:21:34"
+            "time": "2017-08-09T07:53:48+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.7.2",
+            "version": "4.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "ac7b1792641d1fb61cb2901db292903b31694057"
+                "reference": "d500aae1793990e4874cf794b6cf88ce60a38918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/ac7b1792641d1fb61cb2901db292903b31694057",
-                "reference": "ac7b1792641d1fb61cb2901db292903b31694057",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/d500aae1793990e4874cf794b6cf88ce60a38918",
+                "reference": "d500aae1793990e4874cf794b6cf88ce60a38918",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core-installer": "~0.2",
+                "johnpbloch/wordpress-core": "4.8.2",
+                "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
+            },
+            "type": "package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "time": "2017-09-19T22:27:16+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core",
+            "version": "4.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core.git",
+                "reference": "706faa0d7b6b57a25d4acd18331dd71dfa6b01cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/706faa0d7b6b57a25d4acd18331dd71dfa6b01cf",
+                "reference": "706faa0d7b6b57a25d4acd18331dd71dfa6b01cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "provide": {
+                "wordpress/core-implementation": "4.8.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -124,22 +197,23 @@
             "homepage": "http://wordpress.org/",
             "keywords": [
                 "blog",
-                "cms"
+                "cms",
+                "wordpress"
             ],
-            "time": "2017-01-26 18:32:19"
+            "time": "2017-09-19T22:27:11+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "0.2.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
+                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
-                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/e9e767f2d9f994f358c34b41def2c410ad8717f2",
+                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2",
                 "shasum": ""
             },
             "require": {
@@ -149,7 +223,8 @@
                 "composer/installers": "<1.0.6"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev"
+                "composer/composer": "^1.0",
+                "phpunit/phpunit": ">=4.8.35"
             },
             "type": "composer-plugin",
             "extra": {
@@ -174,52 +249,47 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-06-11 15:15:30"
+            "time": "2017-05-31T18:42:33+00:00"
         },
         {
             "name": "seravo/wp-palvelu-plugin",
-            "version": "1.3.7",
+            "version": "1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Seravo/wp-palvelu-plugin.git",
-                "reference": "af957b11f61a6c632b7faa6c51d23e080f817d01"
+                "url": "https://github.com/Seravo/seravo-plugin.git",
+                "reference": "11ff835a7e8470e525e0bd618647383a403fc3f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seravo/wp-palvelu-plugin/zipball/af957b11f61a6c632b7faa6c51d23e080f817d01",
-                "reference": "af957b11f61a6c632b7faa6c51d23e080f817d01",
+                "url": "https://api.github.com/repos/Seravo/seravo-plugin/zipball/11ff835a7e8470e525e0bd618647383a403fc3f1",
+                "reference": "11ff835a7e8470e525e0bd618647383a403fc3f1",
                 "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.0.12"
             },
             "type": "wordpress-muplugin",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPLv3"
+                "MIT"
             ],
             "authors": [
+                {
+                    "name": "Onni Hakala",
+                    "email": "onni@seravo.fi",
+                    "homepage": "https://github.com/onnimonni"
+                },
                 {
                     "name": "Antti Kuosmanen",
                     "email": "antti@seravo.fi",
                     "homepage": "https://github.com/anttiviljami"
-                },
-                {
-                    "name": "Otto Kekäläinen",
-                    "email": "otto@seravo.fi",
-                    "homepage": "https://github.com/ottok"
                 }
             ],
-            "description": "Enhances WordPress with Seravo.com specific features and integrations",
-            "homepage": "http://seravo.com",
+            "description": "Wordpress Mu-Plugin for wordpress instances in wp-palvelu.",
+            "homepage": "http://seravo.fi",
             "keywords": [
-                "seravo",
-                "seravo.com",
                 "wordpress",
                 "wp",
                 "wp-palvelu"
             ],
-            "time": "2016-11-30 08:56:14"
+            "time": "2015-09-21T18:27:58+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -270,20 +340,20 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-10-16 14:50:21"
+            "time": "2014-10-16T14:50:21+00:00"
         },
         {
             "name": "wpackagist-plugin/auto-post-thumbnail",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/auto-post-thumbnail/",
-                "reference": "tags/3.4.0"
+                "reference": "tags/3.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/auto-post-thumbnail.3.4.0.zip",
-                "reference": "tags/3.4.0",
+                "url": "https://downloads.wordpress.org/plugin/auto-post-thumbnail.3.4.1.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -294,7 +364,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.2.3.1",
+            "version": "2.2.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -302,8 +372,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1503425980",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -314,15 +384,15 @@
         },
         {
             "name": "wpackagist-plugin/customizer-export-import",
-            "version": "0.5",
+            "version": "0.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/customizer-export-import/",
-                "reference": "tags/0.5"
+                "reference": "tags/0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/customizer-export-import.0.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/customizer-export-import.0.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -414,15 +484,15 @@
         },
         {
             "name": "wpackagist-plugin/widget-importer-exporter",
-            "version": "1.4.4",
+            "version": "1.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/widget-importer-exporter/",
-                "reference": "tags/1.4.4"
+                "reference": "tags/1.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/widget-importer-exporter.1.4.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/widget-importer-exporter.1.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -454,15 +524,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-nested-pages",
-            "version": "1.6.5.2",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-nested-pages/",
-                "reference": "tags/1.6.5.2"
+                "reference": "tags/2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-nested-pages.1.6.5.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-nested-pages.2.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -474,16 +544,16 @@
         },
         {
             "name": "wpackagist-plugin/wp-piwik",
-            "version": "1.0.14",
+            "version": "1.0.17",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-piwik/",
-                "reference": "tags/1.0.14"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-piwik.1.0.14.zip",
-                "reference": "tags/1.0.14",
+                "url": "https://downloads.wordpress.org/plugin/wp-piwik.zip?timestamp=1502310309",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -518,12 +588,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wpsvse/wpsvse-theme.git",
-                "reference": "96c732e6729daeee274abc5e3af0533cc70d0dde"
+                "reference": "1ea6b7de08ce5b585cd69e530bebc0e92b6bee8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/96c732e6729daeee274abc5e3af0533cc70d0dde",
-                "reference": "96c732e6729daeee274abc5e3af0533cc70d0dde",
+                "url": "https://api.github.com/repos/wpsvse/wpsvse-theme/zipball/1ea6b7de08ce5b585cd69e530bebc0e92b6bee8c",
+                "reference": "1ea6b7de08ce5b585cd69e530bebc0e92b6bee8c",
                 "shasum": ""
             },
             "require": {
@@ -538,21 +608,21 @@
                     ]
                 }
             },
-            "time": "2017-01-27 20:19:57"
+            "time": "2017-02-05T04:01:50+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.5.1",
+            "version": "1.5.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.5.1"
+                "reference": "tags/1.5.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -564,7 +634,7 @@
         },
         {
             "name": "wpackagist-plugin/fakerpress",
-            "version": "0.4.7",
+            "version": "0.4.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/fakerpress/",
@@ -572,8 +642,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fakerpress.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/fakerpress.zip?timestamp=1502140594",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -584,16 +654,16 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "2.13.2",
+            "version": "2.14.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/2.13.2"
+                "reference": "tags/2.14.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.2.13.2.zip",
-                "reference": "tags/2.13.2",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.2.14.0.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -624,16 +694,16 @@
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
-            "version": "1.4",
+            "version": "1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-crontrol/",
-                "reference": "tags/1.4"
+                "reference": "tags/1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.4.zip",
-                "reference": "tags/1.4",
+                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.5.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
