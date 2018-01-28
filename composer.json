@@ -3,7 +3,7 @@
   "type": "project",
   "license": "MIT",
   "description": "WPSV.se",
-  "homepage": "http://wpsv.se",
+  "homepage": "https://wpsv.se",
   "authors": [],
   "keywords": [],
   "config": {
@@ -36,7 +36,7 @@
     "johnpbloch/wordpress": "*",
     "composer/installers": "1.*",
     "vlucas/phpdotenv": "v1.0.9",
-    "seravo/wp-palvelu-plugin": ">=1.0.1",
+    "seravo/seravo-plugin": ">=1.0.1",
     "wpackagist-plugin/auto-post-thumbnail": "*",
     "wpackagist-plugin/wp-piwik": "*",
     "wpackagist-plugin/cmb2": "*",

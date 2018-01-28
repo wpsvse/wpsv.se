@@ -252,7 +252,7 @@
             "time": "2017-05-31T18:42:33+00:00"
         },
         {
-            "name": "seravo/wp-palvelu-plugin",
+            "name": "seravo/seravo-plugin",
             "version": "1.2",
             "source": {
                 "type": "git",
