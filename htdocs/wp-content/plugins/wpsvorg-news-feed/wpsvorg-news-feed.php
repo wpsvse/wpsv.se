@@ -21,7 +21,6 @@ add_action('init', function() {
 		}
 
 		header('Content-Type: application/rss+xml; charset=UTF-8');
-		header('Cache-Control: no-cache, must-revalidate, max-age=0');
 		echo $result;
 		die();
 	}
