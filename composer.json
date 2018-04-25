@@ -28,7 +28,7 @@
     {
       "type": "vcs",
       "url": "git@github.com:wpsvse/wpsvse-theme.git",
-      "no-api" : true
+      "no-api" : false
     }
   ],
   "require": {
@@ -36,7 +36,7 @@
     "johnpbloch/wordpress": "*",
     "composer/installers": "1.*",
     "vlucas/phpdotenv": "v1.0.9",
-    "seravo/wp-palvelu-plugin": ">=1.0.1",
+    "seravo/seravo-plugin": "1.8.*",
     "wpackagist-plugin/auto-post-thumbnail": "*",
     "wpackagist-plugin/wp-piwik": "*",
     "wpackagist-plugin/cmb2": "*",
