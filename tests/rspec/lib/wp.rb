@@ -20,6 +20,7 @@ module WP
   @@jetpack_sso_disabled = false
   @@login_form_recaptcha_disabled = false
   @@google_captcha_disabled = false
+  @@wp_recaptcha_integration_disabled = false
 
   # Return siteurl
   # This works for subdirectory installations as well
@@ -124,14 +125,14 @@ module WP
   end
 
   def self.flushCache
-    # Flush the wordpress caches that might affect tests
+    # Flush the WordPress caches that might affect tests
     `wp cache flush --skip-plugins --skip-themes > /dev/null 2>&1`
     `wp transient delete-all --skip-plugins --skip-themes > /dev/null 2>&1`
   end
 
   def self.disableBotPreventionPlugins
     # Disable the jetpack protect module
-    `wp option get jetpack_active_modules --skip-plugins --skip-themes | grep protect > /dev/null 2>&1`
+    `wp option get jetpack_active_modules --skip-plugins --skip-themes 2> /dev/null | grep protect > /dev/null 2>&1`
     if $?.success?
       #puts "----> Disabling the Jetpack Protect module for the duration of the tests..."
       `wp eval --skip-plugins --skip-themes "update_option('jetpack_active_modules',array_diff(get_option('jetpack_active_modules'),['protect']));" > /dev/null 2>&1`
@@ -139,7 +140,7 @@ module WP
     end
 
     # Disable the jetpack single-sign-on module
-    `wp option get jetpack_active_modules --skip-plugins --skip-themes | grep sso > /dev/null 2>&1`
+    `wp option get jetpack_active_modules --skip-plugins --skip-themes 2> /dev/null | grep sso > /dev/null 2>&1`
     if $?.success?
       #puts "----> Disabling the Jetpack Single Sign-on module for the duration of the tests..."
       `wp eval --skip-plugins --skip-themes "update_option('jetpack_active_modules',array_diff(get_option('jetpack_active_modules'),['sso']));" > /dev/null 2>&1`
@@ -158,6 +159,13 @@ module WP
     if $?.success?
       `wp plugin deactivate --skip-plugins --skip-themes google-captcha > /dev/null 2>&1`
       @@google_captcha_disabled = true
+    end
+
+    # Disable wp-recaptcha-integration plugin
+    `wp plugin list --skip-plugins --skip-themes | grep wp-recaptcha-integration > /dev/null 2>&1`
+    if $?.success?
+      `wp plugin deactivate --skip-plugins --skip-themes wp-recaptcha-integration > /dev/null 2>&1`
+      @@wp_recaptcha_integration_disabled = true
     end
    end
 
@@ -185,6 +193,12 @@ module WP
       `wp plugin activate --skip-plugins --skip-themes google-captcha > /dev/null 2>&1`
       @@google_captcha_disabled = false
     end
+
+    if @@wp_recaptcha_integration_disabled
+      `wp plugin activate --skip-plugins --skip-themes wp-recaptcha-integration > /dev/null 2>&1`
+      @@wp_recaptcha_integration_disabled = false
+    end
+
    end
 
 

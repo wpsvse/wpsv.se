@@ -24,6 +24,8 @@ htdocs/wp-content/mu-plugins/*
 !htdocs/wp-content/plugins/wpsvorg-news-feed
 htdocs/wp-content/themes/*
 !htdocs/wp-content/themes/.gitkeep
+htdocs/wp-content/languages/*
+!htdocs/wp-content/languages/.gitkeep
 
 # WordPress content directories filled with user data
 # not to be tracked in git
