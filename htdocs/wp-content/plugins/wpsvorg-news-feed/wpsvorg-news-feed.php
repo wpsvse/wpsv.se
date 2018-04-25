@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Special news feed for sv.wordpress.org
-Plugin URI: http://wordpress.org/extend/plugins/wp-piwik/
+Plugin URI: https://wpsv.se
 Version: 1.0
 */
 
