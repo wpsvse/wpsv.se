@@ -42,6 +42,9 @@ $table_prefix = getenv('DB_PREFIX') ? getenv('DB_PREFIX') : 'wp_';
  */
 define('CONTENT_DIR', '/wp-content');
 define('WP_CONTENT_DIR', $webroot_dir . CONTENT_DIR);
+
+// WP_CONTENT_URL can be set to enable relative URLs to /wp-content
+// but if undefined, it simply defaults to absolute URLs.
 define('WP_CONTENT_URL', CONTENT_DIR);
 
 /**
@@ -69,23 +72,11 @@ define('NONCE_SALT',       getenv('NONCE_SALT'));
 defined('FORCE_SSL_ADMIN') or define('FORCE_SSL_ADMIN', true);
 
 /**
- * Use *.seravo.com domain as the wp-admin
- */
-if (getenv('HTTPS_DOMAIN_ALIAS'))
-  define('HTTPS_DOMAIN_ALIAS', getenv('HTTPS_DOMAIN_ALIAS'));
-
-/**
  * Custom Settings
  */
 define('AUTOMATIC_UPDATER_DISABLED', true); /* automatic updates are handled by wordpress-palvelu */
 define('DISALLOW_FILE_EDIT', true); /* this disables the theme/plugin file editor */
 define('PLL_COOKIE', false); /* this allows caching sites with polylang, disable if weird issues occur */
-
-/*
- * Auto activated plugins
- * - These plugins will be activated automatically when this is installed
- */
-define('WP_AUTO_ACTIVATE_PLUGINS',"google-analytics-dashboard-for-wp");
 
 /**
  * Only keep the last 30 revisions of a post. Having hundreds of revisions of
@@ -95,15 +86,28 @@ define('WP_AUTO_ACTIVATE_PLUGINS',"google-analytics-dashboard-for-wp");
 define( 'WP_POST_REVISIONS', 30 );
 
 /**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
+ * Namespace session cookies so that overlapping cookie names would not result
+ * in deleting session when users are switching between production and a shadow
+ * instances. Using a clear-text container name does no harm. The default value
+ * is a fully remote predictable md5 hash of the siteurl.
  */
-define('WP_DEBUG', true);
-define('WP_DEBUG_DISPLAY', true);
-define('SCRIPT_DEBUG', false);
+define( 'COOKIEHASH', getenv('CONTAINER') );
+
+/**
+ * For developers: show verbose debugging output if not in production.
+ */
+if ( 'production' === getenv('WP_ENV') ) {
+  define('WP_DEBUG', false);
+  define('WP_DEBUG_DISPLAY', false);
+  define('SCRIPT_DEBUG', false);
+} else {
+  define('WP_DEBUG', true);
+  define('WP_DEBUG_DISPLAY', true);
+  define('SCRIPT_DEBUG', true);
+
+  // Disable wp-content/object-cache.php from being active during development
+  define('WP_REDIS_DISABLED', true);
+}
 
 /**
  * Log error data but don't show it in the frontend.
