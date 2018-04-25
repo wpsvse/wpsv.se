@@ -21,6 +21,7 @@ htdocs/wp-content/mu-plugins/*
 !htdocs/wp-content/mu-plugins/.gitkeep
 !htdocs/wp-content/mu-plugins/register-theme-directory.php
 !htdocs/wp-content/mu-plugins/bedrock-autoloader.php
+!htdocs/wp-content/plugins/wpsvorg-news-feed
 htdocs/wp-content/themes/*
 !htdocs/wp-content/themes/.gitkeep
 
